@@ -15,7 +15,7 @@ h3 {
 
 .galeria-grid {
     display: grid;
-    /* Define 3 colunas: a 1ª é mais larga (1.4fr) e as outras 2 são iguais (1fr) */
+   
     grid-template-columns: 1.4fr 1fr 1fr;
     /* Define 2 linhas de 200px de altura */
     grid-template-rows: repeat(2, 200px);
@@ -27,11 +27,39 @@ h3 {
 .galeria-grid img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta a imagem sem esticar nem distorcer */
+    object-fit: cover;
     display: block;
 }
 
-  /* Faz a 1ª foto ocupar as 2 linhas da 1ª coluna */
+ 
 .foto-principal {
     grid-row: span 2;
   }
+
+.cardapio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;                             
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+
+.cardapio-grid img {
+    width: 100%;
+    height: 200px;                        
+    object-fit: cover;                    
+    border-radius: 10px;                  
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); 
+    transition: transform 0.3s ease;
+}
+
+.cardapio-grid img:hover {
+    transform: scale(1.05);                
+}
+
+@media (max-width: 768px) {
+    .cardapio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

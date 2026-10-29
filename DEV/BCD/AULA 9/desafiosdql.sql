@@ -1,3 +1,4 @@
+-- Active: 1788436126633@@127.0.0.1@3308@smartcoffee_dml_sophia
 -- ============================================================
 -- AULA 09 - ATIVIDADE PRÁTICA DE DQL
 -- Nome: Sophia Carolina SOares da Cunha
