@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimentos de Emergência - GuardianTech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho (Padronizado com a Página Inicial) -->
+    <header>
+        <h2>GuardianTech</h2>
+        <nav>
+            <a href="pagina_inicial.html">Início</a>
+            <a href="pagina_inicial.html#setores">Setores</a>
+            <a href="pagina_inicial.html#nr">NR</a>
+            <a href="pagina_inicial.html#treinamento">Treinamento</a>
+            <a href="pagina_inicial.html#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <!-- Banner Interno da Página -->
+        <div class="hero-title">
+            <h1>Procedimentos de Emergência</h1>
+        </div>
+
+        <!-- Conteúdo do Procedimento Interativo -->
+        <div class="emergencia-container">
+            <!-- Banner Interativo -->
+            <div class="emergencia-banner">
+
+                <h4 id="banner-titulo">Selecione uma categoria abaixo para visualizar o procedimento</h4>
+            </div>
+
+            <!-- Botões das Categorias -->
+            <div class="emergencia-botoes">
+                <button class="btn-emergencia ativo" id="btn-socorros" onclick="trocarCategoria('socorros')">Primeiros Socorros</button>
+                <button class="btn-emergencia" id="btn-incendio" onclick="trocarCategoria('incendio')">Incêndio</button>
+                <button class="btn-emergencia" id="btn-quimico" onclick="trocarCategoria('quimico')">Acidente Químico</button>
+                <button class="btn-emergencia" id="btn-queda" onclick="trocarCategoria('queda')">Queda de Altura</button>
+            </div>
+
+            <!-- Painel de 3 Colunas -->
+            <div class="emergencia-grid">
+                <!-- Coluna: O QUE FAZER -->
+                <div class="card-emergencia">
+                    <h4 class="card-titulo ok">Lista do que se deve fazer</h4>
+                    <ul id="lista-fazer" class="lista-instrucoes">
+                        <!-- Preenchido via JS -->
+                    </ul>
+                </div>
+
+                <!-- Coluna Central: Contatos Úteis -->
+                <div class="card-emergencia card-contatos">
+                    <h4 class="card-titulo">Contatos de Emergência</h4>
+                    <ul class="lista-telefones">
+                        <li><strong>SAMU:</strong> 192</li>
+                        <li><strong>BOMBEIROS:</strong> 193</li>
+                        <li><strong>POLÍCIA MILITAR:</strong> 190</li>
+                        <li><strong>CEREST:</strong> (19) 3404-6200</li>
+                        <li><strong>CETESB:</strong> 0800-0113560</li>
+                        <li><strong>SESI SAÚDE:</strong> 0800-0551000</li>
+                    </ul>
+                </div>
+
+                <!-- Coluna: O QUE NÃO FAZER -->
+                <div class="card-emergencia">
+                    <h4 class="card-titulo no">Lista do que NÃO se deve fazer</h4>
+                    <ul id="lista-nao-fazer" class="lista-instrucoes">
+                        <!-- Preenchido via JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Rodapé (Padronizado) -->
+    <footer>
+        <p>&copy; GuardianTech - Todos os Direitos Reservados</p>
+        <p>Projeto Acadêmico - HTML & CSS</p>
+    </footer>
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

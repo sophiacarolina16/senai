@@ -1,0 +1,9 @@
+{
+    "pokemon-pets.maxPokemon": 12,
+    "pokemon-pets.rewards.pushGold": 10000,
+    "pokemon-pets.rewards.saveCooldownSeconds": 0,
+    "pokemon-pets.rewards.saveGold": 1000,
+    "pokemon-pets.rewards.savesPerFriendship": 1000,
+    "pokemon-pets.rewards.pushFriendship": 100,
+    "pokemon-pets.dayNightCycle": true
+}

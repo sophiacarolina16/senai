@@ -1,0 +1,48 @@
+    
+  /* 1 2 3 */
+
+.equipe{
+    display:flex;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   /*  justify-content: flex-start;  continua na esquerda                       */
+   /*  justify-content: center; centraliza                                      */
+   /*  justify-content: flex-end;  vai pra direita                              */
+   /*  justify-content: space-between; deixa cada um em um canto                */
+   /* justify-content: space-evenly; da um espaço maior pra todos (mas não ficam nos extremos)                                                                */
+
+
+}
+
+
+
+/* 4 */
+
+.diferencas{
+    display: flex;
+    height: 150px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    /*align-items: flex-start; 
+    align-items: center; */
+    align-items: flex-end;
+}
+
+.esquerda { height: 40px; }
+.centro { height: 70px; }
+.direita { height: 110px; }
+
+
+/* 5 */
+
+.cards {
+display: flex;
+gap: 20px;
+
+}
+
+/* pra funcioonar tem que tirar o article */

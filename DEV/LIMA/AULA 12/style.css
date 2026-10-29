@@ -1,0 +1,130 @@
+/* Variáveis em CSS */
+:root {
+    /* Paleta de cores */
+    --espresso: #9e0000;
+    --cafe: #60e07c;
+    --texto: #084b11;
+    --branco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {  
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: green;
+    line-height: 1.6;
+    padding: 20px; 
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    color: var(--espresso);
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 1.1;
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* NAVEGAÇÃO */
+.menu {
+    display: flex;
+    gap: 43px;
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.menu a {
+    color: var(--espresso);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.menu a:hover {
+    color: var(--texto);
+}
+
+.menu a:focus-visible {
+    outline: 3px solid var(--cafe);
+    outline-offset: 4px;
+}
+
+.menu-id {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--espresso);
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 16px;
+    transition: background-color 0.5s ease;
+}
+
+.menu-id:hover {
+    background-color: var(--cafe);
+}
+
+/*IMAGENS */
+.lista-imgs {
+    margin-top: 30px;
+}
+
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(223px, 1fr));
+    gap: 23px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.card-item {
+    height: 100%;
+    padding: 20px;
+    background-color: var(--branco);
+    border: 1px solid var(--cafe);
+    border-radius: 14px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.card-item:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 38px rgba(43, 23, 13, 0.12);
+}
+
+.card-item figure {
+    margin: 0; 
+}
+
+.card-item img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(43, 23, 13, 0.08);
+}
