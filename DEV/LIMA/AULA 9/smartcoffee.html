@@ -3,166 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smartcoffee</title>
+    <title>SmartCoffee</title>
     <link rel="stylesheet" href="padronizacao.css">
 </head>
+<body>
 
-<body style="background-color: #575757;"> <!--base cinza do site-->
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <h2 class="logo">&#x2615;SmartCoffee</h2>
+        <nav class="menu">
+            <a href="#inicio" class="botao">Início</a>
+            <a href="#sobre" class="botao">Sobre</a>
+            <a href="#produtos" class="botao">Produtos</a>
+            <a href="#contato" class="botao">Contato</a>
+        </nav>
+    </header>
 
-    <header style="background-color:#A27878;"> <!--Começo cabeçalho-->
-        <table width="100%">
-            <tr>
-                <td>
-                    <h2 style="color: #6E4545;">&#x2615;SmartCoffee</h2>
-                </td>
-                <td align="right">
-                    <button>Início</button>
-                    <button>Sobre</button>
-                    <button>Produtos</button>
-                    <button>Contato</button>
-                </td>
-            </tr>
-        </table>
-    </header> <!--fim do cabeçalho-->
+    <!-- Banner Início -->
+    <section id="inicio" class="banner-section">
+        <img src="https://altezzechocolate.com.br/wp-content/uploads/2023/06/louca-decoracao-cafeteria-1080x540.jpg" 
+             alt="Imagem cafe" 
+             class="banner-img">
 
-    <br>
-
-    <!--Imagem pagina inicio-->
-    <img src="https://altezzechocolate.com.br/wp-content/uploads/2023/06/louca-decoracao-cafeteria-1080x540.jpg" 
-         alt="Imagem cafe" 
-         style="width: 95%; max-width: 1000px; display: block; margin: 0 auto;">
-
-    <br>
-
-    <div style="background-color: #555555; padding: 20px; width: fit-content; margin: 0 auto;">
-        <div style="background-color: #a87979; padding: 15px 40px; text-align: center;">
-            <h1 style="color: #D9D9D9; font-style: italic; margin: 0;">SmartCoffee</h1>
+        <div class="caixa-titulo-externa">
+            <div class="caixa-titulo-interna">
+                <h1>SmartCoffee</h1>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <br>
+    <!-- Nossa História -->
+    <section id="sobre" class="secao">
+        <h3>Nossa História</h3>
+        <div class="historia-box">
+            <img src="https://cdn.abrahao.com.br/base/84d/571/1e9/tipos-cafe-cafeteria.jpg" alt="Barista preparando café">
+            <p>
+                O SmartCoffee nasceu como um projeto prático do curso de Desenvolvimento de Sistemas. Nosso objetivo vai além do café: a plataforma foi projetada para colocar em prática conceitos fundamentais de programação, aplicar regras de negócio complexas e aperfeiçoar a lógica de desenvolvimento. Assim como um bom café nos conecta, o SmartCoffee une aprendizado e tecnologia em uma só experiência.
+            </p>
+        </div>
+    </section>
 
-    <h3>Nossa História</h3> <!--caixa-->
-    <table align="center">
-        <tr>
-            <td>
-                <img src="https://cdn.abrahao.com.br/base/84d/571/1e9/tipos-cafe-cafeteria.jpg" alt="Barista preparando café" width="300">
-            </td>
-            <td width="30"></td>
-            <td width="400">
-                <p style="color: #D9D9D9;">
-                    O SmartCoffee nasceu como um projeto prático do curso de Desenvolvimento de Sistemas. Nosso objetivo vai além do café: a plataforma foi projetada para colocar em prática conceitos fundamentais de programação, aplicar regras de negócio complexas e aperfeiçoar a lógica de desenvolvimento. Assim como um bom café nos conecta, o SmartCoffee une aprendizado e tecnologia em uma só experiência.
-                </p>
-            </td>
-        </tr>
-    </table>
-
-    <br>
-
-    <!--Cardapio-->
-    <h3 style="text-align: center; color: #D9D9D9;">Cardápio</h3>
-    <br>
-
-    <!-- Bebidas Quentes -->
-    <h4 style="text-align: center; color: #D9D9D9;">Bebidas Quentes</h4>
-    
-    <div class="cardapio-grid">
-        <img src="https://i.pinimg.com/736x/9d/88/9e/9d889e4daf0dbfd593718e5ef7df0d96.jpg" alt="Café visto de cima">
-        <img src="https://img.magnific.com/fotos-gratis/vista-aerea-de-cafe-quente_53876-146542.jpg?semt=ais_hybrid&w=740&q=80" alt="Cappuccino visto de cima">
-        <img src="https://thumbs.dreamstime.com/b/chocolate-quente-visto-de-acima-isolado-no-branco-4851657.jpg" alt="Chocolate quente visto de cima">
-        <img src="https://media.istockphoto.com/id/610748560/pt/foto/x%C3%ADcara-de-ch%C3%A1-de-cima.jpg?s=612x612&w=0&k=20&c=2SPXJj_sW-IINsAFb7Jmdqag_lnRA5AsHVT8ag8yVhE=" alt="Chá visto de cima">
-    </div>
-
-    <br>
-
-    <!-- Bebidas Geladas -->
-    <h4 style="text-align: center; color: #D9D9D9;">Bebidas Geladas</h4>
-    <div class="cardapio-grid">
-        <img src="https://thumbs.dreamstime.com/b/cola-com-os-cubos-de-gelo-na-vista-superior-de-vidro-isolados-no-backgrou-branco-87054957.jpg" alt="Coca visto de cima">
-        <img src="https://media.istockphoto.com/id/1288582586/pt/foto/glass-of-water-with-ice-cubes.jpg?s=612x612&w=0&k=20&c=UTcsgO7ff9DIhsSSWH7C7oLwhH-jJQRE-Sf4oxosn5k=" alt="copo d'agua visto de cima">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKg4RohJ2N4dHbC_QnzYckS9ee7_bLR5J4Qldwb4HGijOXU3beqEuhsumP&s=10" alt="cerveja visto de cima">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR0hRoy2NkK5nsz7N4FQiTbGkKOpbqHjHNKELKnSKIpHJLki_X48SF1cKk&s=10" alt="suco laranja visto de cima">
-    </div>
-
-    <br>
-
-    <!-- Salgados -->
-    <h4 style="text-align: center; color: #D9D9D9;">Salgados</h4>
-    <div class="cardapio-grid">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAuRncLWzXH4TVz6f8dorMKMzNPQ9DtI5i_-BcmhiBfdPQMeh-mZX9jdTK&s=10" alt="coxinha visto de cima">
-        <img src="https://t3.ftcdn.net/jpg/13/91/49/92/360_F_1391499295_WfxTHMSusFTd9JTM7SWJnvKylZX3HVbI.jpg" alt="pão de queijo visto de cima">
-        <img src="https://thumbs.dreamstime.com/b/chocolate-quente-visto-de-acima-isolado-no-branco-4851657.jpg" alt="Chocolate quente visto de cima">
-        <img src="https://media.istockphoto.com/id/610748560/pt/foto/x%C3%ADcara-de-ch%C3%A1-de-cima.jpg?s=612x612&w=0&k=20&c=2SPXJj_sW-IINsAFb7Jmdqag_lnRA5AsHVT8ag8yVhE=" alt="Chá visto de cima">
-    </div>
-
-    <br>
-
-    <!-- Doces -->
-    <h4 style="text-align: center; color: #D9D9D9;">Doces</h4>
-    <div class="cardapio-grid">
-        <img src="https://i.pinimg.com/736x/9d/88/9e/9d889e4daf0dbfd593718e5ef7df0d96.jpg" alt="Café visto de cima">
-        <img src="https://img.magnific.com/fotos-gratis/vista-aerea-de-cafe-quente_53876-146542.jpg?semt=ais_hybrid&w=740&q=80" alt="Cappuccino visto de cima">
-        <img src="https://thumbs.dreamstime.com/b/chocolate-quente-visto-de-acima-isolado-no-branco-4851657.jpg" alt="Chocolate quente visto de cima">
-        <img src="https://media.istockphoto.com/id/610748560/pt/foto/x%C3%ADcara-de-ch%C3%A1-de-cima.jpg?s=612x612&w=0&k=20&c=2SPXJj_sW-IINsAFb7Jmdqag_lnRA5AsHVT8ag8yVhE=" alt="Chá visto de cima">
-    </div>
-
-    <br>
-
-    <h3>Ambiente</h3>
-    <br>
-
-    <div class="galeria-grid">
-        <!-- 1 -->
-        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Espaço interno da cafeteria" class="foto-principal">
-
-        <!-- 2Foto -->
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Decoração e iluminação">
-
-        <!-- 3Foto -->
-        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Balcão de café">
-
-        <!-- 4Foto -->
-        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="Mesas do ambiente">
-
-        <!-- 5Foto -->
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Café da manhã na mesa">
-    </div>
-
-    <br>
-
-    <h4 style="color: #D9D9D9; text-align: center;">
-        <span style="margin: 0 15px;">WIFI GRATIS</span> | 
-        <span style="margin: 0 15px;">TOMADA NA MESA</span> | 
-        <span style="margin: 0 15px;">ESPAÇO ABERTO</span> | 
-        <span style="margin: 0 15px;">AREA PET</span>
-    </h4>
-
-    <br>
-
-    <h3 style="text-align: right; padding-right: 20px;">Contato</h3>
-    <br>
-
-    <div style="display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 0 20px;">
-        <!-- Texto -->
-        <div style="color: #D9D9D9;">
-            <p>Endereço: Praça Professor Antonio de Queiroz, 72 - Jardim Mercedes, Limeira - SP, CEP 13480-251</p>
-            <p>Email: contato@smartcoffee.com</p>
-            <p>Telefone: (19) 99999-9999</p>
-            <p>Horário: 07:00 - 18:00</p>
+    <!-- Cardápio -->
+    <section id="produtos" class="secao">
+        <div class="centro">
+            <h3>Cardápio</h3>
         </div>
 
-        <!-- Mapa -->
-        <div>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.219711909774!2d-47.40642902381597!3d-22.570884425954354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f271224b05%3A0x4cbe1bd4f2e1b2c0!2sEscola%20SENAI%20Luiz%20Varga!5e0!3m2!1spt-BR!2sbr!4v1790363376428!5m2!1spt-BR!2sbr" 
-                width="350" 
-                height="250" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy">
-            </iframe>
+        <h4>Bebidas Quentes</h4>
+        <div class="cardapio-grid">
+            <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=500&q=80" alt="Café Espresso">
+            <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=500&q=80" alt="Cappuccino Cremoso">
+            <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=500&q=80" alt="Chocolate Quente">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=500&q=80" alt="Chá Quente">
         </div>
-    </div>
+
+        <h4>Bebidas Geladas</h4>
+        <div class="cardapio-grid">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" alt="Café Gelado (Iced Coffee)">
+            <img src="https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=500&q=80" alt="Suco Natural de Laranja">
+            <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=500&q=80" alt="Soda Italiana">
+            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500&q=80" alt="Frappuccino">
+        </div>
+
+        <h4>Salgados</h4>
+        <div class="cardapio-grid">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Croissant">
+            <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=500&q=80" alt="Sanduíche Natural">
+            <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=500&q=80" alt="Empada / Torta Salgada">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Pão Artesanal">
+        </div>
+
+        <h4>Doces</h4>
+        <div class="cardapio-grid">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=500&q=80" alt="Bolo de Chocolate">
+            <img src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?auto=format&fit=crop&w=500&q=80" alt="Brownie">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=500&q=80" alt="Cookies">
+            <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=500&q=80" alt="Cheesecake">
+        </div>
+    </section>
+
+    <!-- Ambiente -->
+    <section class="secao">
+        <h3>Ambiente</h3>
+
+        <div class="galeria-grid">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Espaço interno da cafeteria" class="foto-principal">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Decoração e iluminação">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=600&q=80" alt="Balcão de café">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=600&q=80" alt="Mesas do ambiente">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Café da manhã na mesa">
+        </div>
+
+        <h4 class="beneficios">
+            <span>WIFI GRATIS</span> | 
+            <span>TOMADA NA MESA</span> | 
+            <span>ESPAÇO ABERTO</span> | 
+            <span>AREA PET</span>
+        </h4>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="secao">
+        <div class="direita">
+            <h3>Contato</h3>
+        </div>
+
+        <div class="contato-box">
+            <div class="contato-texto">
+                <p><strong>Endereço:</strong> Praça Professor Antonio de Queiroz, 72 - Jardim Mercedes, Limeira - SP, CEP 13480-251</p>
+                <p><strong>Email:</strong> contato@smartcoffee.com</p>
+                <p><strong>Telefone:</strong> (19) 99999-9999</p>
+                <p><strong>Horário:</strong> 07:00 - 18:00</p>
+            </div>
+
+            <div class="contato-mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.219711909774!2d-47.40642902381597!3d-22.570884425954354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c880f271224b05%3A0x4cbe1bd4f2e1b2c0!2sEscola%20SENAI%20Luiz%20Varga!5e0!3m2!1spt-BR!2sbr!4v1790363376428!5m2!1spt-BR!2sbr" 
+                    width="350" 
+                    height="250" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
