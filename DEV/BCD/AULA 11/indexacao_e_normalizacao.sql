@@ -36,9 +36,9 @@ CREATE TABLE CLIENTE (
 );
 
 INSERT INTO CLIENTE VALUES
-(DEFAULT,'Sophia Carolina','sophia@gamil.com','Limeira'),
-(DEFAULT,'Ana Clara','ana@gamil.com','Limeira'),
-(DEFAULT,'Evelyn','evelyn@gamil.com','Limeira');
+(DEFAULT,'Sophia ','sophia@gmail.com','Limeira'),
+(DEFAULT,'Ana ','ana@gmail.com','Limeira'),
+(DEFAULT,'Evelyn','evelyn@gmail.com','Limeira');
 
 CREATE TABLE CATEGORIA (
     ID_CATEGORIA INT AUTO_INCREMENT,
